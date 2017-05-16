@@ -5,4 +5,4 @@
   - local_a: "{{a}}"
   tasks:
   - name: Write this to file
-    copy: content="{{local_a}}" dest=/usr/tmp/asaffile
+    debug: msg="var is {{local_a}}"
