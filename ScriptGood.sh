@@ -1,1 +1,9 @@
-echo 'asdasdasd'
+echo %msg
+sleep 5
+echo %msg
+sleep 5
+echo %msg
+sleep 5
+echo %msg
+sleep 5
+echo %msg
