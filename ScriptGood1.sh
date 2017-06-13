@@ -1,5 +1,5 @@
 now=$(date)
 echo "Start date: $now"
-sleep 5m
+sleep 2m
 now=$(date)
 echo "End date: $now"
