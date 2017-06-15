@@ -1,1 +1,2 @@
-echogf $env:msg
+write-host AAAAA
+echo BBBBB
