@@ -1,0 +1,10 @@
+
+---
+# This playbook uses the win_ping module to test connectivity to Windows hosts
+- name: Ping
+  hosts: all
+  tasks:
+  - name: Pausing  2000s  as if waiting for something....  NO SMARTS YET
+    pause:
+      seconds: 2000
+      prompt: no
