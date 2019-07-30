@@ -1,1 +1,1 @@
-ifconfig
+ifconfig -all
