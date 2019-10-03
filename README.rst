@@ -1,42 +1,47 @@
 ionosphere
-===========
+==========
 
-[![License](https://img.shields.io/pypi/l/troposphere.svg)](https://opensource.org/licenses/BSD-2-Clause) [![PyPI](https://img.shields.io/pypi/v/ionosphere.svg?maxAge=2592000&style=flat)](https://pypi.python.org/pypi/ionosphere/) [![Build Status](https://travis-ci.org/QualiNext/ionosphere.svg?branch=master)](https://travis-ci.org/QualiNext/ionosphere)    
+|License| |PyPI| |Build Status|
 
 About
 =====
 
-Ionosphere - library to create [Azure Resource Manager Templates](https://docs.microsoft.com/en-us/azure/templates/) descriptions (Ionosphere is porting of troposphere)
+Ionosphere - library to create `Azure Resource Manager
+Templates <https://docs.microsoft.com/en-us/azure/templates/>`__
+descriptions (Ionosphere is porting of troposphere)
 
-The Ionosphere library allows for easier creation of the Azure Resource Manager templates
-JSON by writing Python code to describe the Azure resources. 
+The Ionosphere library allows for easier creation of the Azure Resource
+Manager templates JSON by writing Python code to describe the Azure
+resources.
 
-To facilitate catching ARM templates or JSON errors early the library has
-property and type checking built into the classes.
+To facilitate catching ARM templates or JSON errors early the library
+has property and type checking built into the classes.
 
 Currently supported Azure resource types
 ========================================
 
-- Virtual Machine
-- Virtual Machine Extension
-- Virtual Machine Scale Sets
-- Virtual Machine Scale Set Extension
-- Virtual Network
-- Public IP Address
-- Network Interface
-- Network SecurityGroup
-- Application Security Group
-- Load Balancer
-- Dns Zone
-- Application Gateway
-- Storage Account
+-  Virtual Machine
+-  Virtual Machine Extension
+-  Virtual Machine Scale Sets
+-  Virtual Machine Scale Set Extension
+-  Virtual Network
+-  Public IP Address
+-  Network Interface
+-  Network SecurityGroup
+-  Application Security Group
+-  Load Balancer
+-  Dns Zone
+-  Application Gateway
+-  Storage Account
 
 Example
 =======
-The following example will generate an ARM Template that creates a VNet and an Ubuntu VM with a public IP.
-The template also exposes port 22 on the VM to the internet.
 
-.. code-block:: python
+The following example will generate an ARM Template that creates a VNet
+and an Ubuntu VM with a public IP. The template also exposes port 22 on
+the VM to the internet.
+
+.. code:: python
 
     # Create the object
     template = ARMTemplate()
@@ -107,13 +112,22 @@ The template also exposes port 22 on the VM to the internet.
     # Generate ARM Template
     print(template.to_json())
 
-
 Contributions
 =============
+
 All contributions are welcome.
 
 Licensing
 =========
 
-Ionosphere is a fork of troposphere which is licensed under the [BSD 2-Clause license](http://opensource.org/licenses/BSD-2-Clause).
-See [LICENSE](https://github.com/cloudtools/ionosphere/blob/master/LICENSE) for the Ionosphere full license text.
+Ionosphere is a fork of troposphere which is licensed under the `BSD
+2-Clause license <http://opensource.org/licenses/BSD-2-Clause>`__. See
+`LICENSE <https://github.com/cloudtools/ionosphere/blob/master/LICENSE>`__
+for the Ionosphere full license text.
+
+.. |License| image:: https://img.shields.io/pypi/l/troposphere.svg
+   :target: https://opensource.org/licenses/BSD-2-Clause
+.. |PyPI| image:: https://img.shields.io/pypi/v/ionosphere.svg?maxAge=2592000&style=flat
+   :target: https://pypi.python.org/pypi/ionosphere/
+.. |Build Status| image:: https://travis-ci.org/QualiNext/ionosphere.svg?branch=master
+   :target: https://travis-ci.org/QualiNext/ionosphere
