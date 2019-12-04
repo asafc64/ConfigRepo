@@ -7,6 +7,6 @@
       path: "~/some-file.txt"
       state: touch
   - name: Run ls.sh and output "ls ~/"
-    script: ls.sh ~/
+    command: ls.sh ~/
     register: out
   - debug: var=out.stdout_lines
